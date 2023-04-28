@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+      background-color: antiquewhite;
+} 
+ 
+
+*{/*all done in body*/  
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+}
+nav ul{
+    display: flex;/*horizontal*/
+    align-items: center;/*for making it to centre*/
+    list-style-type: none;/*to remove the points*/
+    height: 65px;
+    background-color: black;
+    color: white;/*bg black hai so we need to make white so tht we can see*/
+}
+nav ul li{
+    padding: 0 12px;/*for home and about to go left or right*/
+}
+.brand img{
+    width: 45px; 
+    padding: 0 8px;/*for making spotify and its image lil far*/
+}
+.brand{
+    display: flex;/*for making the spotify ;look good*/
+    align-items: center;/*for making the spotify look good*/
+    font-weight: bolder;/*for spotify to look good*/
+    font-size: 1.3rem;/*for spotify to look good*/ 
+}
+
+.container{
+    min-height: 72vh;/*to make it down*/
+    background-color: black;
+    color: white;
+    display: flex;
+    margin: 23px auto;/*this will mke the container in middle*/
+    width: 70%;/*this will make the container in the middle*/
+    border-radius: 12px;
+    padding: 5px;
+    background-image: url('bg2bg.jpg');
+
+}
+
+.bottom{
+          position: sticky;
+          bottom: 0;
+          height: 70px;
+          background-color: black;
+          color: white;
+          display: flex;/*to make the progress bar at centre*/
+          justify-content: center;/*to make the progress bar at centre*/
+          align-items: center;/*to make the progress bar at centre*/
+          flex-direction: column;/*by this it will come in the middle of  the container*/
+          }
+.icons{
+    margin-top: 14px;/*icons and progress bar k beech gap*/
+}
+
+.icons i{
+    cursor: pointer;/*whenever it comes to play,stop,for.,backward it will show pointer.*/
+}
+#myProgressBar{
+            width: 80vw;/*this will increase the progress bar in width i.e. chota or bada*/ 
+            cursor: pointer;
+}
+
+.songItem{
+    height: 40px;
+    display: flex;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    margin: 12px 0;
+    justify-content: space-between;/*uniform gap between all three*/
+    align-items: center;
+
+}
+
+.songItem img{
+    width: 65px;
+    margin: 0 23px 0;
+}
+
+
+.timestamp{
+    margin: 0 20px;
+
+}
+
+.timestamp i{
+    cursor: pointer;
+}
+
+.songInfo{
+    position: absolute; /*this both made the gif from middle to left*/
+    left: 0;/*this both made the gif from middle to left*/
+}
+.songInfo img{
+    opacity: 0;
+    transition: opacity is ease-in;
+}
